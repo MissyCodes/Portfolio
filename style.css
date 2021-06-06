@@ -2,7 +2,6 @@
     background-color: #141322;
     color: #69C7D5;
     font-family: 'Roboto', sans-serif;
-    cursor: default;
     user-select: none;
 }
 
@@ -101,7 +100,7 @@ h1 {
 
 #verticalLine2 {
   border-left: 1px solid #353541;
-  height: 198vh;
+  height: 300vh;
   position: absolute;
   top: 80px;
   left: 20%;
@@ -125,7 +124,7 @@ h1 {
 
 #verticalLine5 {
   border-left: 1px solid #353541;
-  height: 160vh;
+  height: 260vh;
   position: absolute;
   top: 425px;
   left: 24%;
@@ -141,12 +140,27 @@ h1 {
 }
 
 #learn-more {
-    text-align: center;
+    text-align: left;
     margin-top: 200px;
+    margin-left: 30%;
+}
+
+#learn-more-2{
+  text-align: left;
+  margin-top: 75px;
+  margin-left: 30%;
+}
+
+.yellow {
+  color: #ffd900;
+}
+
+.yellow:hover {
+  color: white;
 }
 
 #learn-more a:hover {
-    color: #ffd900;
+    color: white;
 }
 
 .blinking-cursor {
@@ -206,9 +220,11 @@ h1 {
   }
 
   .headers {
-      text-align: center;
+ 
       font-size: 4vw;
-      margin-top: 50px;
+      margin-top: 100px;
+      margin-left: 25%;
+      margin-bottom: 25px;
   }
 
   .hidden {
@@ -227,31 +243,43 @@ h1 {
 }
 
 #project-tiles {
-  display: flex;
-  margin-left: 12%;
-  margin-right: 5%;
-  position: relative;
-  justify-content: space-around;
-  margin-top: 150px;
+  margin-top: 50px;
 }
 
 .tile {
-  text-align: center;
+  display: flex;
+  margin-left: 25%;
+  margin-bottom: 20px;
 }
 
-.tile img{
-  max-width: 75%;
+.project-img {
+  flex: 1;
+  object-fit: cover;
+  max-width: 275px;
+  max-height: 150px;
   height: auto;
+  border: 1px solid #F2408F;
+  padding: 4px;
 }
 
-.tile img:hover {
-  filter: grayscale(100%);
-  opacity: 50%;
-  color: #F2408F;
-  cursor: pointer;
+.title {
+  font-size: 24px;
 }
 
-.tile:hover .project-title {
-  color: #F2408F;
-  cursor: pointer;
+.description {
+  flex: 4;
+  margin-left: 25px;
+  margin-right: 160px;
+  /* I want to find a way to do a collapsable pargraph when the screen size is smaller */
 }
+
+.title > h3 {
+  margin-top: 0px;
+ }
+ 
+
+ #Projects > p:nth-child(3) {
+  margin-left: 25%;
+  margin-right: 145px;
+ }
+ 
