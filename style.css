@@ -275,8 +275,8 @@ h1 {
 
 .title > h3 {
   margin-top: 0px;
+  margin-bottom: 0;
  }
- 
 
  #Projects > p:nth-child(3) {
   margin-left: 25%;
