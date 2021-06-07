@@ -22,7 +22,7 @@ a {
   z-index: 998;
 }
 
-#nav-bar {
+#navbar {
     display: flex;
 }
 
@@ -54,6 +54,10 @@ a {
 
 .nav-link a:hover .cross {
   opacity: 1;
+}
+
+#welcome-section {
+  height: 100vh;
 }
 
 #hero {
@@ -100,7 +104,7 @@ h1 {
 
 #verticalLine2 {
   border-left: 1px solid #353541;
-  height: 300vh;
+  height: 3605px;
   position: absolute;
   top: 80px;
   left: 20%;
@@ -124,7 +128,7 @@ h1 {
 
 #verticalLine5 {
   border-left: 1px solid #353541;
-  height: 260vh;
+  height: 3225px;
   position: absolute;
   top: 425px;
   left: 24%;
@@ -222,7 +226,7 @@ h1 {
   .headers {
  
       font-size: 4vw;
-      margin-top: 100px;
+      margin-top: 75px;
       margin-left: 25%;
       margin-bottom: 25px;
   }
@@ -246,7 +250,7 @@ h1 {
   margin-top: 50px;
 }
 
-.tile {
+.project-tile {
   display: flex;
   margin-left: 25%;
   margin-bottom: 20px;
@@ -278,8 +282,30 @@ h1 {
   margin-bottom: 0;
  }
 
- #Projects > p:nth-child(3) {
+ #projects > p:nth-child(3) {
   margin-left: 25%;
   margin-right: 145px;
  }
  
+.title h3 a span:hover{
+  color: #ffd900;
+ }
+
+ #check {
+   margin-left: 20%;
+   margin-top: 10px;
+ }
+
+ #body-close {
+   margin-left: 24%;
+ }
+
+ #html-close {
+   margin-left: 20%;
+ }
+
+ @media screen and (max-width: 768px) {
+  body {
+    width: 100vw;
+  }
+ }
