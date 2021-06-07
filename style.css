@@ -1,3 +1,24 @@
+/* Table of Contents:
+  1. global styles
+    1.1 colors
+    1.2 tabs
+  2. navigation bar
+    2. Xs that appear when nav links are hovered
+  3. layout
+    3.1 Hidden elements for spacing
+    3.2 Projects section
+  4. Decorations
+    4.1 Pink line that runs underneath the nav links
+    4.2 Vertical lines that run down the left side of the page
+    4.3 Buttons that link to other part of the page
+    4.4 Blinking curser in the header 
+  */
+
+
+/* ===============
+  1. global styles 
+=============== */
+
 * {
     background-color: #141322;
     color: #69C7D5;
@@ -13,6 +34,51 @@ a {
     cursor: pointer;
     text-decoration: none;
 }
+
+h1 {
+  font-size: 6vw;
+  margin-bottom: 0;
+}
+
+/* ===============
+  1.1 colors
+=============== */
+
+.lightest-blue {
+  color: #A5E0DE;
+}
+
+.pink {
+  color: #F2408F;
+}
+
+.yellow {
+  color: #ffd900;
+}
+
+.yellow:hover {
+  color: white;
+}
+
+/* ===============
+  1.2 tabs
+=============== */
+
+.tab1 {
+  margin-left: 5%;
+}
+
+.tab2 {
+  margin-left: 10%;
+}
+
+.tab3 {
+  margin-left: 20%;
+}
+
+/* ===============
+  2. navigation bar 
+=============== */
 
 #navigation {
   width: 100%;
@@ -44,6 +110,10 @@ a {
     color: #ffd900;
 }
 
+/* ===============
+  2.1 These are the little Xs that appear when nav links are hovered
+=============== */
+
 .cross {
   position: absolute;
   top: 0;
@@ -56,6 +126,10 @@ a {
   opacity: 1;
 }
 
+/* ===============
+  3. Layout 
+=============== */
+
 #welcome-section {
   height: 100vh;
 }
@@ -64,187 +138,40 @@ a {
     margin: 65px 1px 0 20%;
 }
 
-.lightest-blue {
-    color: #A5E0DE;
-}
-
-.pink {
-    color: #F2408F;
-}
-
-.tab1 {
-    margin-left: 5%;
-}
-
-.tab2 {
-    margin-left: 10%;
-}
-
-.tab3 {
-    margin-left: 20%;
-}
-
-h1 {
-    font-size: 6vw;
-    margin-bottom: 0;
-}
-
 #subheading {
     font-size: 2vw;
 }
 
-#verticalLine {
-    border-left: 1px solid #8C2C56;
-    height: 100vh;
-    position: fixed;
-    top: 0;
-    left: 14%;
-    z-index: 999;
-}
-
-#verticalLine2 {
-  border-left: 1px solid #353541;
-  height: 3605px;
-  position: absolute;
-  top: 80px;
-  left: 20%;
-}
-
-#verticalLine3 {
-  border-left: 1px solid #353541;
-  height: 6vw;
-  position: absolute;
-  top: 118px;
-  left: 24%;
-}
-
-#verticalLine4 {
-  border-left: 1px solid #353541;
-  height: 5vw;
-  position: absolute;
-  top: 260px;
-  left: 24%;
-}
-
-#verticalLine5 {
-  border-left: 1px solid #353541;
-  height: 3225px;
-  position: absolute;
-  top: 425px;
-  left: 24%;
-}
-
-#top-line {
-    width: 100% - 13.7%;
-    background: #8C2C56;
-    height: 1px;
-    border: 0;
-    margin-left: 13.7%;
-    
-}
-
-#learn-more {
-    text-align: left;
-    margin-top: 200px;
-    margin-left: 30%;
-}
-
-#learn-more-2{
-  text-align: left;
-  margin-top: 75px;
-  margin-left: 30%;
-}
-
-.yellow {
-  color: #ffd900;
-}
-
-.yellow:hover {
-  color: white;
-}
-
-#learn-more a:hover {
-    color: white;
-}
-
-.blinking-cursor {
-    font-weight: 100;
-    font-size: 6vw;
-    color: #2E3D48;
-    -webkit-animation: 1s blink step-end infinite;
-    -moz-animation: 1s blink step-end infinite;
-    -ms-animation: 1s blink step-end infinite;
-    -o-animation: 1s blink step-end infinite;
-    animation: 1s blink step-end infinite;
-  }
-  
-  @keyframes blink {
-    from, to {
-      color: transparent;
-    }
-    50% {
-      color: #F2408F;
-    }
-  }
-  
-  @-moz-keyframes blink {
-    from, to {
-      color: transparent;
-    }
-    50% {
-      color: #F2408F;
-    }
-  }
-  
-  @-webkit-keyframes blink {
-    from, to {
-      color: transparent;
-    }
-    50% {
-      color: #F2408F;
-    }
-  }
-  
-  @-ms-keyframes blink {
-    from, to {
-      color: transparent;
-    }
-    50% {
-      color: #F2408F;
-    }
-  }
-  
-  @-o-keyframes blink {
-    from, to {
-      color: transparent;
-    }
-    50% {
-      color: #F2408F;
-    }
-  }
-
-  .headers {
+.headers {
  
-      font-size: 4vw;
-      margin-top: 75px;
-      margin-left: 25%;
-      margin-bottom: 25px;
-  }
-
-  .hidden {
-    margin-top: 600px;
-    visibility: hidden;
-  }
-
-  .hidden2 {
-    margin-top: 600px;
-    visibility: hidden;
-  }
+  font-size: 4vw;
+  margin-top: 75px;
+  margin-left: 25%;
+  margin-bottom: 25px;
+}
 
 .paragraph {
   margin-left: 35.3%;
   margin-right: 225px;
+  }
+
+/* ===============
+  3.1 Hidden elements for spacing 
+=============== */
+
+.hidden {
+margin-top: 600px;
+visibility: hidden;
 }
+
+.hidden2 {
+margin-top: 600px;
+visibility: hidden;
+}
+
+/* ===============
+  3.2 Projects section 
+=============== */
 
 #project-tiles {
   margin-top: 50px;
@@ -304,8 +231,145 @@ h1 {
    margin-left: 20%;
  }
 
- @media screen and (max-width: 768px) {
-  body {
-    width: 100vw;
+/* ===============
+  4. Decoration 
+=============== */
+
+/* ===============
+  4.1 Pink line that runs underneath the nav links 
+=============== */
+
+#top-line {
+  width: 100% - 13.7%;
+  background: #8C2C56;
+  height: 1px;
+  border: 0;
+  margin-left: 13.7%;
+  
+}
+
+/* ===============
+  4.2 Vertical lines that run down the left side of the page 
+=============== */
+
+#verticalLine {
+    border-left: 1px solid #8C2C56;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 14%;
+    z-index: 999;
+}
+
+#verticalLine2 {
+  border-left: 1px solid #353541;
+  height: 3605px;
+  position: absolute;
+  top: 80px;
+  left: 20%;
+}
+
+#verticalLine3 {
+  border-left: 1px solid #353541;
+  height: 6vw;
+  position: absolute;
+  top: 118px;
+  left: 24%;
+}
+
+#verticalLine4 {
+  border-left: 1px solid #353541;
+  height: 5vw;
+  position: absolute;
+  top: 260px;
+  left: 24%;
+}
+
+#verticalLine5 {
+  border-left: 1px solid #353541;
+  height: 3225px;
+  position: absolute;
+  top: 425px;
+  left: 24%;
+}
+
+/* ===============
+  4.3 Buttons that link to other part of the page 
+=============== */
+
+#learn-more {
+    text-align: left;
+    margin-top: 200px;
+    margin-left: 30%;
+}
+
+#learn-more-2{
+  text-align: left;
+  margin-top: 75px;
+  margin-left: 30%;
+}
+
+#learn-more a:hover {
+    color: white;
+}
+
+/* ===============
+  4.4 Blinking curser in the header 
+=============== */
+
+.blinking-cursor {
+    font-weight: 100;
+    font-size: 6vw;
+    color: #2E3D48;
+    -webkit-animation: 1s blink step-end infinite;
+    -moz-animation: 1s blink step-end infinite;
+    -ms-animation: 1s blink step-end infinite;
+    -o-animation: 1s blink step-end infinite;
+    animation: 1s blink step-end infinite;
   }
- }
+  
+  @keyframes blink {
+    from, to {
+      color: transparent;
+    }
+    50% {
+      color: #F2408F;
+    }
+  }
+  
+  @-moz-keyframes blink {
+    from, to {
+      color: transparent;
+    }
+    50% {
+      color: #F2408F;
+    }
+  }
+  
+  @-webkit-keyframes blink {
+    from, to {
+      color: transparent;
+    }
+    50% {
+      color: #F2408F;
+    }
+  }
+  
+  @-ms-keyframes blink {
+    from, to {
+      color: transparent;
+    }
+    50% {
+      color: #F2408F;
+    }
+  }
+  
+  @-o-keyframes blink {
+    from, to {
+      color: transparent;
+    }
+    50% {
+      color: #F2408F;
+    }
+  }
+
